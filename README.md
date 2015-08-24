@@ -23,11 +23,13 @@ Call
 to extract LatMoG Fisher vectors. Use `grapopt=alpha` for the LatBoW model and `grapopt=all` for the LatMoG model to get all Fisher vector components. In our experiments, we then apply per-dimension whitening and L2 normalization to the resulting descriptors, as explained in the paper.
 
 In order to utilize the aforementioned functions, the following per-image statistics over local descriptors should to be provided in the `fvbase` struct:
+
 field         | Size          | Contents  
 ------------- |:-------------:|:---------:
   E_x         |   (N D K)     | E_x(j,:,k)=sum_i( p(k\|x_i) * x_i ) / sum_i( p(k\|x_i) ), over x_i \in image_j |
   E_x2        | (N D K)       | E_x2(j,:,k)=sum_i( p(k\|x_i) * x_i^2 ) / sum_i( p(k\|x_i) )
   counts      | (N K)         | counts(j,k)=sum_i( p(k\|x_i) ), over x_i \in image_j
+  
 where 
 * `x_i` i-th local descriptor in an image.
 * `N`:  number of training images
