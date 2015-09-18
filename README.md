@@ -1,7 +1,8 @@
 # Source Code for Non-i.i.d. Image Models
 
 This package provides the Matlab source code for training and extracting Fisher vectors of Latent Bag-of-Words (LatBoW) and Latent Mixture-of-Gaussians (LatMoG) models, as explained in 
-* Ramazan Gokberk Cinbis, Jakob Verbeek, Cordelia Schmid, “Image categorization using Fisher kernels of non-iid image models”, in IEEE Conference on Computer Vision & Pattern Recognition (CVPR), Providence, USA, June 2012
+* Ramazan Gokberk Cinbis, Jakob Verbeek, Cordelia Schmid, “Approximate Fisher Kernels of non-iid Image Models for Image Categorization”, accepted for publication in IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), 2015,
+* Ramazan Gokberk Cinbis, Jakob Verbeek, Cordelia Schmid, “Image categorization using Fisher kernels of non-iid image models”, in IEEE Conference on Computer Vision & Pattern Recognition (CVPR), Providence, USA, June 2012.
 
 Call 
 ``` 
